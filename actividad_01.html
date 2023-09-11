@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Actividad 01</title>
+		<link rel="stylesheet" href=".\css\styles01.css" />
+	</head>
+	<body>
+		<h1>CINE UNIVERSITARIA</h1>
+		<p>EN CARTELERA</p>
+		<p>Tenga en cuenta que las siguientes peliculas son gratuitas para los miembros de la comunidad de universitaria:</p>
+		<ul>
+			<li>Terror</li>
+			<li>Comedia</li>
+			<li>Accion</li>
+		</ul>
+		<table>
+			<tr class="head">
+				<th></th>
+				<th>CC Altavista</th>
+				<th>CC CentroMayor</th>
+				<th>CC Santafe</th>
+			</tr>
+			<tr>
+				<th>Terror</th>
+				<td>LA MONJA 2<br />9am - 2pm</td>
+				<td>HABLAME<br />9am - 2pm</td>
+				<td>COBWEB<br />9am - 2pm</td>
+			</tr>
+			<tr class="even">
+				<th>Accion</th>
+				<td>BLUE BEETLE<br />2pm - 5pm</td>
+				<td>MEGALODON 2<br />2pm - 5pm</td>
+				<td>LA PIEL DEL TAMBOR<br />2pm - 5pm</td>
+			</tr>
+			<tr>
+				<th>Comedia</th>
+				<td>BARBIE<br />11am - 2pm</td>
+				<td>ELEMENTAL<br />11am - 2pm</td>
+				<td>TORTUGAS NINJA CAOS MUTANTE<br />11am - 2pm</td>
+			</tr>
+			<tr class="even">
+				<th>DRAMA</th>
+				<td>ROMA<br />11am - 4pm</td>
+				<td>Misión imposible: sentencia mortal - parte 1<br />11am - 4pm</td>
+				<td>MADRES PARALELAS<br />11am - 4pm</td>
+			</tr>
+		</table>
+		<form action="actividad_02.html" method="get">
+			<fieldset>
+				<legend>QUE PELICULA DESEA VER:</legend>
+				<p><label class="title" for="name">Su Nombre:</label>
+					 <input type="text" name="name" id="name"><br />
+					 <label class="title" for="email">Su correo:</label>
+					 <input type="text" name="email" id="email"></p>
+				<p><label for="location" class="title">Su cine cercano:</label>
+					 <select name="location" id="location">
+						 <option value="bo">CC Altavista</option>
+						 <option value="ib">CC CentroMayor</option>
+						 <option value="me">CC Santafe</option>
+					 </select></p>
+				<span class="title">Es Miembro de la Comunidad?</span>
+				<label><input type="radio" name="member" value="si" /> Si</label>
+				<label><input type="radio" name="member" value="no" /> No</label></p>
+			</fieldset>
+ 	    <div class="submit"><input type="submit" value="Registro" /></div>
+		</form>
+	</body>
+</html>
